@@ -33,3 +33,16 @@ return  empty list
 ![](2023-10-04-22-26-43.png)
 ![](2023-10-04-22-28-39.png)
 https://youtu.be/yRKqKdp-9ns?t=574
+![](2023-10-05-08-14-31.png)
+![](2023-10-05-08-17-42.png)
+![](2023-10-05-08-18-00.png)
+![](2023-10-05-08-18-59.png)
+![](2023-10-05-08-21-27.png)
+![](2023-10-05-08-21-41.png)
+- DFS is achieved by treating open as stack
+- BFS used open as a Queue,(FIFO)
+- BFS generates children, but wont look at the children immediately
+- BFS travels the tree level by level
+- DFS is impecuous (finds a  new node, goes to it)
+- BFS is conservative,
+![](2023-10-05-08-28-03.png)
