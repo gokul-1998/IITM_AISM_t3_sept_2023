@@ -1,0 +1,36 @@
+## L3.1: Heuristic Search
+
+- DFS and BSF are called blind search or uninformed search as they do not use any information about the goal
+- they dont have any sense of direction
+- Heuristic search
+    - it has  sense of direction
+    - ![](2023-10-14-15-31-16.png)
+    - approach for DFS,
+        - we always extract a node from the head of open , and check if it is goal or not, if its not a goal then we call the movegen function 
+    - ![](2023-10-14-15-32-55.png)
+        - the red node is the goal node and we can see that it is not giving any attention to the goal node
+    - ![](2023-10-14-15-33-29.png)
+    - other algo was BFS, in which the new nodes are added to the tail of open, making it behave like a queue, 
+    - ![](2023-10-14-15-34-07.png)
+    - because of that it lies closer to the source as possible
+    - this will always finds the shortest path whenever it finds a path
+    - these algos are called blind or uninformed search
+        - both dfs and bfs are blind search
+    - ![](2023-10-14-15-41-13.png)
+    - it should someway be aware of which direction to go
+    - ![](2023-10-14-15-42-35.png)
+    - ![](2023-10-14-15-43-34.png)
+    - if no momentum , then the ball will stop at the bottom of the hill, 
+    - where all gradients are pointing upwards and there are no gradient pointing downwards
+    - ![](2023-10-14-15-46-49.png)
+    - the idea of a heuristic function 
+    - closeness to the goal is what we are trying to capture
+    - there are there funcitons that a user is expected to provide to a general purpose search algorithm
+    - movegen - navigates the space
+    - goaltest - checks if a node is a goal node, and stops the search
+    - heuristic - it is a function that takes a node as input and returns a number, which is an estimate of how close the node is to the goal
+        - it estimates the distance to the goal
+    - ![](2023-10-14-15-51-37.png)
+    - ![](2023-10-14-15-52-15.png)
+- Best First Search
+    - open the best node on the open list
