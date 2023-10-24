@@ -1,0 +1,59 @@
+## L4.3: Genetic Algorithms
+- Population Based methods
+- we are going to work with a population of solutions, instead of a single solution
+- ![](2023-10-23-16-02-35.png)
+- ![](2023-10-23-16-03-28.png)
+- ![](2023-10-23-16-04-15.png)
+- ![](2023-10-23-16-05-05.png)
+- ![](2023-10-23-16-05-39.png)
+- ![](2023-10-23-16-06-18.png)
+- ![](2023-10-23-16-06-42.png)
+- Survival of the fittest
+- ![](2023-10-23-16-07-22.png)
+- influence diagram, and the flow of positive influence
+- Fox -> Lion, 
+  - more fox, more lions, 
+  - more lions, more bacteria
+- ![](2023-10-23-16-07-31.png)
+- ![](2023-10-23-16-09-06.png)
+- everytime nature comes up with a new generation, it selects the fittest individuals from the previous generation
+- ![](2023-10-23-16-11-02.png)
+- ![](2023-10-23-16-11-52.png)
+- an instance of Generate and Test
+- ![](2023-10-23-16-12-25.png) 
+- mixing up happens in the gene level, and the competition happens in the individual level, 
+- ![](2023-10-23-16-13-16.png)
+- ![](2023-10-23-16-14-00.png)   
+- ![](2023-10-23-16-15-25.png)
+- ![](2023-10-23-16-16-17.png)
+- ![](2023-10-23-16-17-08.png)
+- since P5 has bigger angle than P6, so P5 is fitter than P6
+- ![](2023-10-23-16-18-23.png)
+- ![](2023-10-23-16-19-09.png)
+- the arrow determines which genes go to which child
+- Note, we select the two parents randomly and we select the cross over point randomly
+- consider this as a SAT problem of 8 variables and we produce two children
+- ![](2023-10-23-16-20-56.png)
+- idea is just to mix up the genes, 
+- ![](2023-10-23-16-21-44.png)
+- https://youtu.be/UVUDOW9OQF0?t=1272
+- ![](2023-10-23-16-24-41.png)
+  - we can see that C1 is the best solution, 
+  - we have achieved the heuristic value of 6
+  - ![](2023-10-23-16-25-53.png)
+  - ![](2023-10-23-16-26-27.png)
+  - ![](2023-10-23-16-26-56.png)
+  - in practice for genetic algo to work well we need large and diverse population
+  - ![](2023-10-23-16-28-40.png)
+  - ![](2023-10-23-16-38-31.png)
+  - ![](2023-10-23-16-39-14.png)
+  - ![](2023-10-23-16-40-53.png)
+  - this here says only two different kinds of individuals left
+  - the reason for 0 being in red is, the third gene is missing from all the individuals, means , however much churning, we do , the middle gene will never show up, but middel gene is there in the largest candidate, so we will never reach the largest candidate (11111)
+  - This example shows that if we work on smaller population we may loose out on some genes, and population will become less diverse,
+  - Cheetah is the fastest animal, but it has very less genetic diversity, and it is very susceptible to diseases
+  - Cheetah is a very good example of what happens when we have very less genetic diversity
+  - The Cheetah is no longer the fastest animal, because it has very less genetic diversity
+  - ![](2023-10-23-16-44-56.png)
+  - ![](2023-10-23-16-45-45.png)
+  - ![](2023-10-23-16-45-52.png)
