@@ -11,7 +11,7 @@
 - ![](2023-10-23-17-17-12.png)
 - ![](2023-10-23-17-19-22.png)
 - ![](2023-10-23-17-20-26.png)
-- Partial mapped cross over(PMX)
+- ## Partial mapped cross over(PMX)
   - https://youtu.be/4X0MZVMs4X8?t=523
   - ![](2023-10-23-17-22-44.png)
   - ![](2023-10-23-17-23-33.png) 
