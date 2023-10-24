@@ -1,12 +1,12 @@
 ## L4.4: Solving TSP using GAs
 
-- Travelling sales man problem
+- ## Travelling sales man problem
 - ![](2023-10-23-16-49-26.png)
 - ![](2023-10-23-16-49-56.png)
 - children has repeating letters, such as L and B, J
 - in TSP , single point cross over as shown above is not a good idea
 - we need something more intersting
-- TSP : Cycle Cross over
+- ## TSP : Cycle Cross over
 - https://youtu.be/4X0MZVMs4X8?t=216
 - ![](2023-10-23-17-17-12.png)
 - ![](2023-10-23-17-19-22.png)
@@ -20,11 +20,15 @@
   - the remaining copies are directly copied from parent2 to child1
   - ![](2023-10-23-17-29-58.png)
   - ![](2023-10-23-17-30-24.png)
+  - ## TSP PMX
   - ![](2023-10-23-17-30-52.png)
+  - ## TSP ORDER CROSS OVER
   - ![](2023-10-23-17-31-37.png)
   - after the partial map, we follow the same order and fill the gaps
   - ![](2023-10-23-17-32-18.png)
+  - ## Adjacency Representation
   - in adjacency Representation ,we can find from where we came from
+
   - ![](2023-10-23-17-34-22.png)
   - ![](2023-10-23-17-34-53.png)
   - https://youtu.be/4X0MZVMs4X8?t=1010 
@@ -39,8 +43,8 @@
     - Ans : Not 1
   - BACD tour = DCAB tour, in path representation
   - but in adjacency representation, BACD tour != DCAB tour
-- Adjacency Representation cross over Operators
-  - Alternating Edges Cross Over:
+- ## Adjacency Representation cross over Operators
+  - ### Alternating Edges Cross Over:
     - Note in Adjacency Representation, we can know from which city we are going to which city, without actually traversing the tour, 
     - https://youtu.be/4X0MZVMs4X8?t=1152
     - So construct the child as follows
@@ -53,7 +57,7 @@
     - In Alternating Edges cross over we pick one edge from one parent and other edge from the other parent, and keep construciting a tour
     - In alternating edges, we might get same cities and also we might get dead end aswell
     - We have to be careful that, not every way of constructing this will be a tour
-  - Heuristic Crossover
+  - ### Heuristic Crossover
     - ![](2023-10-24-16-44-25.png)
     - we want to construct shorter tours
   - Adjacency representation , facilitates these choices
@@ -64,7 +68,7 @@
   - these are the devices , that we are building so that, we can do genetic algorithms,
   - We need to construct a population of cities, and keep churning the population to develop new tours essentially
   - Only thing about TSP is , we have to careful , that not every permutation of N cities is a valid tour in Adjacency repre
-- Ordinal Representation : 
+- ## Ordinal Representation : 
   - we start with an index as before,  we use numerical representaion of the remaining cities, Ofcourse all cities are remaining cities initially , so 
   - we want to convert path repr to ordinal repr,
   - we start with city O, Replace the name of the city in the path representaion one by one , by its current numeric index
